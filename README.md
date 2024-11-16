@@ -3,5 +3,6 @@
 ## Team Members
 - Patrick Medley
 - Irvin Silva
+- Jhonatan Rios
 
 Patrick Medley
