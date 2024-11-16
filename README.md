@@ -1,4 +1,5 @@
 # handcrafted-haven-wdd430
 
-
-Patrick Medley
+## Team Members
+- Patrick Medley
+- Irvin Silva
