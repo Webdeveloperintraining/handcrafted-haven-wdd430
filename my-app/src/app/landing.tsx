@@ -10,6 +10,9 @@ export default function LandingPage() {
           We are a team of skilled craftsmen dedicated to creating unique, handcrafted items for the home.
         </p>
 
+
+        <br></br>
+
         <div className="product-grid">
           <Image src="https://picsum.photos/300/300?random=1" alt="Product" width={300} height={300} className="product-image" style={{margin: '0 10px'}} />
           <Image src="https://picsum.photos/300/300?random=2" alt="Product" width={300} height={300} className="product-image" style={{margin: '0 10px'}} />
