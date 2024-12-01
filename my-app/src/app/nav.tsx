@@ -6,12 +6,12 @@ export default function Nav() {
       <Image src="https://i.imghippo.com/files/dljA7368qkk.png" alt="Logo" width={50} height={50} />
       <ul>
         <li>
-          <Link href="/">
-         Home
+          <Link href="/profile">
+         Seller Profile
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/about">
            About
           </Link>
         </li>
