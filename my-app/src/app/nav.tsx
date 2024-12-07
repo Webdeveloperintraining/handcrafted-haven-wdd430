@@ -10,6 +10,12 @@ export default function Nav() {
          Seller Profile
           </Link>
         </li>
+
+        <li>
+          <Link href="/products">
+           Products
+          </Link>
+        </li>
         <li>
           <Link href="/about">
            About
