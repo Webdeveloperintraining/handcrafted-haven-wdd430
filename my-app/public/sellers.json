@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "profilePicture": "https://picsum.photos/150/150?random=1",
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 1",
+          "image": "https://picsum.photos/300/300?random=2"
+        },
+        {
+          "id": 2,
+          "name": "Product 2",
+          "image": "https://picsum.photos/300/300?random=3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "profilePicture": "https://picsum.photos/150/150?random=4",
+      "products": [
+        {
+          "id": 3,
+          "name": "Product 3",
+          "image": "https://picsum.photos/300/300?random=5"
+        },
+        {
+          "id": 4,
+          "name": "Product 4",
+          "image": "https://picsum.photos/300/300?random=6"
+        }
+      ]
+    }
+  ]
