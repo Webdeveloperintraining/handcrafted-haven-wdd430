@@ -83,12 +83,6 @@ nav a:hover {
 
 
 
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-}
 
 .seller-grid {
   display: grid;

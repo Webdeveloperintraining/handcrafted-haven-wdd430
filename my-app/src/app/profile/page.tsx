@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Nav from '../nav';
-import SellerProfileDetails from '../SellerProfileDetails';
 
 const ProfilePage = () => {
   const [sellers, setSellers] = useState([]);
@@ -21,7 +20,7 @@ const ProfilePage = () => {
 
   return (
     <div className="page">
-      <Nav />
+      <Nav></Nav>
       <h1>Seller Profiles</h1>
       <div className="seller-grid">
         {sellers.map((seller) => (
@@ -31,9 +30,6 @@ const ProfilePage = () => {
           </div>
         ))}
       </div>
-      {selectedSeller && (
-        <SellerProfileDetails seller={selectedSeller} />
-      )}
     </div>
   );
 };

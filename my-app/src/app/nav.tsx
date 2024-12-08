@@ -3,7 +3,9 @@ import Link from 'next/link';
 export default function Nav() {
   return (
     <nav className="nav">
-      <Image src="https://i.imghippo.com/files/dljA7368qkk.png" alt="Logo" width={50} height={50} />
+      <Link href="/">
+        <Image src="https://i.imghippo.com/files/dljA7368qkk.png" alt="Logo" width={50} height={50} />
+      </Link>
       <ul>
         <li>
           <Link href="/profile">
