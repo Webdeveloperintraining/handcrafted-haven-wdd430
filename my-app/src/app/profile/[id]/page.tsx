@@ -5,16 +5,23 @@ import { useParams } from 'next/navigation';
 import Nav from '../../nav';
 import SellerProfileDetails from '../../SellerProfileDetails';
 
+interface ISeller {
+  id: number;
+  // Add other properties that sellers might have
+}
+
+
 
 const SellerProfile = () => {
   const params = useParams();
   const [seller, setSeller] = useState(null);
 
   useEffect(() => {
+    
     fetch('/sellers.json')
       .then(response => response.json())
       .then(data => {
-        const foundSeller = data.find((s: any) => s.id === parseInt(params.id));
+        const foundSeller = data.find((s: ISeller) => s.id === parseInt(params.id as string));
         setSeller(foundSeller);
       });
   }, [params.id]);
