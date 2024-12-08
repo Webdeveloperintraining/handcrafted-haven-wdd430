@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Nav from '../../nav';
 import SellerProfileDetails from '../../SellerProfileDetails';
 
+
 const SellerProfile = () => {
   const params = useParams();
   const [seller, setSeller] = useState(null);
@@ -13,7 +14,7 @@ const SellerProfile = () => {
     fetch('/sellers.json')
       .then(response => response.json())
       .then(data => {
-        const foundSeller = data.find(s => s.id === parseInt(params.id));
+        const foundSeller = data.find((s: any) => s.id === parseInt(params.id));
         setSeller(foundSeller);
       });
   }, [params.id]);

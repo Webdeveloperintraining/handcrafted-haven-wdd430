@@ -20,7 +20,7 @@ interface Seller {
 const ProfilePage = () => {
   // Specify the type of the sellers state
   const [sellers, setSellers] = useState<Seller[]>([]);
-  const [selectedSeller, setSelectedSeller] = useState<Seller | null>(null);
+
 
   useEffect(() => {
     fetch('/sellers.json')
