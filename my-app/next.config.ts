@@ -1,9 +1,23 @@
+// my-app/next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ['picsum.photos', 'via.placeholder.com', 'i.imghippo.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+      },
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.imghippo.com',
+      },
+    ],
   }
 };
 
